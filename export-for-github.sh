@@ -3,13 +3,13 @@
 # Create a directory for the static site
 mkdir -p gh-pages
 
-# Build the static site
+# Build the static website
 echo "Building static website..."
-npx vite build --outDir=./gh-pages --base=./
+npx vite build --outDir=../gh-pages --base=./
 
-# Copy required assets
+# Copy required assets (if any exist in client/public)
 echo "Copying assets..."
-cp -r client/public/* gh-pages/ 2>/dev/null || :
+cp -r client/public/* ./gh-pages/ 2>/dev/null || :
 
 # Create a README file with instructions
 echo "Creating README.md..."
