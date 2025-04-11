@@ -9,6 +9,7 @@ npx vite build --outDir=../gh-pages --base=./
 
 # Copy required assets (if any exist in client/public)
 echo "Copying assets..."
+cp -r ./gh-pages/* .
 cp -r client/public/* ./gh-pages/ 2>/dev/null || :
 
 echo "✅ Done! The static site is ready in the 'gh-pages' directory."
