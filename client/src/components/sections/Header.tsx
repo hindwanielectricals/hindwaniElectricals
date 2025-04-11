@@ -31,7 +31,6 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="font-bold text-2xl md:text-3xl">
-              <span className="text-[#0052A5]">Finolex Wires - </span>
               <span className="text-[#FF6B00]">Sri Hindwani Electricals</span>
             </div>
           </div>
